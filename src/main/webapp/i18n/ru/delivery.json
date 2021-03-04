@@ -1,0 +1,28 @@
+{
+  "onlineRestoranApp": {
+    "delivery": {
+      "home": {
+        "title": "Deliveries",
+        "createLabel": "Создать новый Delivery",
+        "createOrEditLabel": "Создать или отредактировать Delivery",
+        "notFound": "No Deliveries found"
+      },
+      "created": "Новый Delivery создан с идентификатором {{ param }}",
+      "updated": "Delivery обновлен с идентификатором {{ param }}",
+      "deleted": "Delivery удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Delivery {{ id }}?"
+      },
+      "detail": {
+        "title": "Delivery"
+      },
+      "departurtime": "Departurtime",
+      "arrivaltime": "Arrivaltime",
+      "status": "Status",
+      "help": {
+        "departurtime": "departur_time",
+        "arrivaltime": "arrival_time"
+      }
+    }
+  }
+}

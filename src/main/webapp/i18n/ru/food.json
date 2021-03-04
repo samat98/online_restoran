@@ -1,0 +1,30 @@
+{
+  "onlineRestoranApp": {
+    "food": {
+      "home": {
+        "title": "Foods",
+        "createLabel": "Создать новый Food",
+        "createOrEditLabel": "Создать или отредактировать Food",
+        "notFound": "No Foods found"
+      },
+      "created": "Новый Food создан с идентификатором {{ param }}",
+      "updated": "Food обновлен с идентификатором {{ param }}",
+      "deleted": "Food удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Food {{ id }}?"
+      },
+      "detail": {
+        "title": "Food"
+      },
+      "name": "Name",
+      "price": "Price",
+      "img": "Img",
+      "description": "Description",
+      "category": "Category",
+      "help": {
+        "name": "name",
+        "img": "image of Food"
+      }
+    }
+  }
+}

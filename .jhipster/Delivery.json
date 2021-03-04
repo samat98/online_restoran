@@ -1,0 +1,33 @@
+{
+  "name": "Delivery",
+  "fields": [
+    {
+      "fieldName": "departurtime",
+      "fieldType": "LocalDate",
+      "javadoc": "departur_time"
+    },
+    {
+      "fieldName": "arrivaltime",
+      "fieldType": "LocalDate",
+      "javadoc": "arrival_time"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "Preparing,Onroad,Delivered"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210304080042",
+  "javadoc": "The Delivery entity.\\n@author A true hipster",
+  "entityTableName": "delivery",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["online_restoran"]
+}

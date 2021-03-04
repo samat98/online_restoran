@@ -1,0 +1,10 @@
+{
+  "onlineRestoranApp": {
+    "Status": {
+      "null": "",
+      "Preparing": "Preparing",
+      "Onroad": "Onroad",
+      "Delivered": "Delivered"
+    }
+  }
+}

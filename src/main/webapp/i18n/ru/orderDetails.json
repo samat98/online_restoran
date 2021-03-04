@@ -1,0 +1,27 @@
+{
+  "onlineRestoranApp": {
+    "orderDetails": {
+      "home": {
+        "title": "Order Details",
+        "createLabel": "Создать новый Order Details",
+        "createOrEditLabel": "Создать или отредактировать Order Details",
+        "notFound": "No Order Details found"
+      },
+      "created": "Новый Order Details создан с идентификатором {{ param }}",
+      "updated": "Order Details обновлен с идентификатором {{ param }}",
+      "deleted": "Order Details удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Order Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Order Details"
+      },
+      "quantity": "Quantity",
+      "food": "Food",
+      "order": "Order",
+      "help": {
+        "quantity": "quantity"
+      }
+    }
+  }
+}
