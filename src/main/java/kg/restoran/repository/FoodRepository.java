@@ -2,6 +2,7 @@ package kg.restoran.repository;
 
 import kg.restoran.domain.Food;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.stereotype.Repository;
 

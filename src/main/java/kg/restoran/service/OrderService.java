@@ -40,4 +40,8 @@ public interface OrderService {
      * @param id the id of the entity.
      */
     void delete(Long id);
+
+    List<Order> findByUserIsCurrentUser();
+
+    Optional<Order> findOneByUserIsCurrentUser(Long id);
 }

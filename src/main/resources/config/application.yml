@@ -19,13 +19,13 @@ management:
     web:
       base-path: /management
       exposure:
-        include: ['configprops', 'env', 'health', 'info', 'jhimetrics', 'logfile', 'loggers', 'prometheus', 'threaddump']
+        include: []
   endpoint:
     health:
-      show-details: when_authorized
+      show-details: never
       roles: 'ROLE_ADMIN'
     jhimetrics:
-      enabled: true
+      enabled: false
   info:
     git:
       mode: full

@@ -6,12 +6,12 @@
       "home": "Главная",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
-        "main": "Сущности",
-        "order": "Order",
-        "orderDetails": "Order Details",
-        "food": "Food",
-        "category": "Category",
-        "delivery": "Delivery",
+        "main": "Меню",
+        "order": "Заказ",
+        "orderDetails": "Детали Заказа",
+        "food": "Блюдо",
+        "category": "Категории",
+        "delivery": "Доставка",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
