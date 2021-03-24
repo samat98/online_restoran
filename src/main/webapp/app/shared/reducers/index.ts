@@ -32,6 +32,18 @@ import category, {
 import delivery, {
   DeliveryState
 } from 'app/entities/delivery/delivery.reducer';
+// prettier-ignore
+import restoran, {
+  RestoranState
+} from 'app/entities/restoran/restoran.reducer';
+// prettier-ignore
+import menu, {
+  MenuState
+} from 'app/entities/menu/menu.reducer';
+// prettier-ignore
+import manager, {
+  ManagerState
+} from 'app/entities/manager/manager.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -50,6 +62,9 @@ export interface IRootState {
   readonly food: FoodState;
   readonly category: CategoryState;
   readonly delivery: DeliveryState;
+  readonly restoran: RestoranState;
+  readonly menu: MenuState;
+  readonly manager: ManagerState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -70,6 +85,9 @@ const rootReducer = combineReducers<IRootState>({
   food,
   category,
   delivery,
+  restoran,
+  menu,
+  manager,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

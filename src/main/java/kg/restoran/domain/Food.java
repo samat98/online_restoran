@@ -57,6 +57,10 @@ public class Food implements Serializable {
     @JsonIgnoreProperties(value = "foods", allowSetters = true)
     private Category category;
 
+    @ManyToOne
+    @JsonIgnoreProperties(value = "foods", allowSetters = true)
+    private Menu menu;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
     public Long getId() {
         return id;
@@ -142,6 +146,19 @@ public class Food implements Serializable {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public Food menu(Menu menu) {
+        this.menu = menu;
+        return this;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here
 

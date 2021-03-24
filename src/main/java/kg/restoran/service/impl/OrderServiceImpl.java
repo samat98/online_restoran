@@ -53,14 +53,4 @@ public class OrderServiceImpl implements OrderService {
         log.debug("Request to delete Order : {}", id);
         orderRepository.deleteById(id);
     }
-
-    @Override
-    public List<Order> findByUserIsCurrentUser() {
-        return orderRepository.findByUserIsCurrentUser();
-    }
-
-    @Override
-    public Optional<Order> findOneByUserIsCurrentUser(Long id) {
-        return orderRepository.findOneByUserIsCurrentUser(id);
-    }
 }

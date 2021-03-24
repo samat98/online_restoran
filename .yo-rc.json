@@ -39,5 +39,5 @@
     "otherModules": [],
     "blueprints": []
   },
-  "entities": ["Order", "OrderDetails", "Food", "Category", "Delivery"]
+  "entities": ["Order", "OrderDetails", "Food", "Restoran", "Menu", "Manager", "Category", "Delivery"]
 }

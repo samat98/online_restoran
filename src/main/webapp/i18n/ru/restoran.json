@@ -1,0 +1,27 @@
+{
+  "onlineRestoranApp": {
+    "restoran": {
+      "home": {
+        "title": "Restorans",
+        "createLabel": "Создать новый Restoran",
+        "createOrEditLabel": "Создать или отредактировать Restoran",
+        "notFound": "No Restorans found"
+      },
+      "created": "Новый Restoran создан с идентификатором {{ param }}",
+      "updated": "Restoran обновлен с идентификатором {{ param }}",
+      "deleted": "Restoran удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Restoran {{ id }}?"
+      },
+      "detail": {
+        "title": "Restoran"
+      },
+      "address": "Address",
+      "name": "Name",
+      "help": {
+        "address": "address",
+        "name": "name"
+      }
+    }
+  }
+}

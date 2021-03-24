@@ -12,6 +12,9 @@
         "food": "Блюдо",
         "category": "Категории",
         "delivery": "Доставка",
+        "restoran": "Ресторан",
+        "manager": "Мэнежер ресторана",
+        "menu": "Меню ресторана",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

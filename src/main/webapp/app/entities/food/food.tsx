@@ -107,6 +107,9 @@ export const Food = (props: IFoodProps) => {
                 <th>
                   <Translate contentKey="onlineRestoranApp.food.category">Category</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
+                <th>
+                  <Translate contentKey="onlineRestoranApp.food.menu">Menu</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
                 <th />
               </tr>
             </thead>
@@ -137,6 +140,7 @@ export const Food = (props: IFoodProps) => {
                   </td>
                   <td>{food.description}</td>
                   <td>{food.category ? <Link to={`category/${food.category.id}`}>{food.category.name}</Link> : ''}</td>
+                  <td>{food.menu ? <Link to={`menu/${food.menu.id}`}>{food.menu.id}</Link> : ''}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`${match.url}/${food.id}`} color="info" size="sm">

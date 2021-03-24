@@ -1,0 +1,23 @@
+{
+  "onlineRestoranApp": {
+    "menu": {
+      "home": {
+        "title": "Menus",
+        "createLabel": "Создать новый Menu",
+        "createOrEditLabel": "Создать или отредактировать Menu",
+        "notFound": "No Menus found"
+      },
+      "created": "Новый Menu создан с идентификатором {{ param }}",
+      "updated": "Menu обновлен с идентификатором {{ param }}",
+      "deleted": "Menu удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Menu {{ id }}?"
+      },
+      "detail": {
+        "title": "Menu"
+      },
+      "restoran": "Restoran",
+      "food": "Food"
+    }
+  }
+}

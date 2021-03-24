@@ -5,18 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 export interface IMenuItem {
-  icon: IconProp;
   to: string;
   id?: string;
 }
 
 export default class MenuItem extends React.Component<IMenuItem> {
   render() {
-    const { to, icon, id, children } = this.props;
+    const { to, id, children } = this.props;
 
     return (
       <DropdownItem tag={Link} to={to} id={id}>
-        <FontAwesomeIcon icon={icon} fixedWidth /> {children}
+         {children}
       </DropdownItem>
     );
   }

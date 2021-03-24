@@ -53,9 +53,6 @@ export const Home = (props: IHomeProp) => {
           </div>
         )}
       </Col>
-      <Col md="3" className="pad">
-        <span className="hipster rounded" />
-      </Col>
     </Row>
   );
 };

@@ -9,6 +9,8 @@ import { IRootState } from 'app/shared/reducers';
 
 import { ICategory } from 'app/shared/model/category.model';
 import { getEntities as getCategories } from 'app/entities/category/category.reducer';
+import { IMenu } from 'app/shared/model/menu.model';
+import { getEntities as getMenus } from 'app/entities/menu/menu.reducer';
 import { getEntity, updateEntity, createEntity, setBlob, reset } from './food.reducer';
 import { IFood } from 'app/shared/model/food.model';
 import { convertDateTimeFromServer, convertDateTimeToServer, displayDefaultDateTime } from 'app/shared/util/date-utils';
@@ -18,9 +20,10 @@ export interface IFoodUpdateProps extends StateProps, DispatchProps, RouteCompon
 
 export const FoodUpdate = (props: IFoodUpdateProps) => {
   const [categoryId, setCategoryId] = useState('0');
+  const [menuId, setMenuId] = useState('0');
   const [isNew, setIsNew] = useState(!props.match.params || !props.match.params.id);
 
-  const { foodEntity, categories, loading, updating } = props;
+  const { foodEntity, categories, menus, loading, updating } = props;
 
   const { img, imgContentType } = foodEntity;
 
@@ -36,6 +39,7 @@ export const FoodUpdate = (props: IFoodUpdateProps) => {
     }
 
     props.getCategories();
+    props.getMenus();
   }, []);
 
   const onBlobChange = (isAnImage, name) => event => {
@@ -185,6 +189,21 @@ export const FoodUpdate = (props: IFoodUpdateProps) => {
                     : null}
                 </AvInput>
               </AvGroup>
+              <AvGroup>
+                <Label for="food-menu">
+                  <Translate contentKey="onlineRestoranApp.food.menu">Menu</Translate>
+                </Label>
+                <AvInput id="food-menu" type="select" className="form-control" name="menu.id">
+                  <option value="" key="0" />
+                  {menus
+                    ? menus.map(otherEntity => (
+                        <option value={otherEntity.id} key={otherEntity.id}>
+                          {otherEntity.id}
+                        </option>
+                      ))
+                    : null}
+                </AvInput>
+              </AvGroup>
               <Button tag={Link} id="cancel-save" to="/food" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;
@@ -208,6 +227,7 @@ export const FoodUpdate = (props: IFoodUpdateProps) => {
 
 const mapStateToProps = (storeState: IRootState) => ({
   categories: storeState.category.entities,
+  menus: storeState.menu.entities,
   foodEntity: storeState.food.entity,
   loading: storeState.food.loading,
   updating: storeState.food.updating,
@@ -216,6 +236,7 @@ const mapStateToProps = (storeState: IRootState) => ({
 
 const mapDispatchToProps = {
   getCategories,
+  getMenus,
   getEntity,
   updateEntity,
   setBlob,

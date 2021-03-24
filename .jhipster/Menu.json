@@ -1,0 +1,31 @@
+{
+  "name": "Menu",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "restoran",
+      "otherEntityRelationshipName": "menu",
+      "relationshipName": "restoran",
+      "otherEntityField": "name",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "food",
+      "otherEntityRelationshipName": "menu",
+      "relationshipName": "food"
+    }
+  ],
+  "changelogDate": "20210324105950",
+  "entityTableName": "menu",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["online_restoran"]
+}

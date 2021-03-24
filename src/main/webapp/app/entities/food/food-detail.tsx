@@ -72,6 +72,10 @@ export const FoodDetail = (props: IFoodDetailProps) => {
             <Translate contentKey="onlineRestoranApp.food.category">Category</Translate>
           </dt>
           <dd>{foodEntity.category ? foodEntity.category.name : ''}</dd>
+          <dt>
+            <Translate contentKey="onlineRestoranApp.food.menu">Menu</Translate>
+          </dt>
+          <dd>{foodEntity.menu ? foodEntity.menu.id : ''}</dd>
         </dl>
         <Button tag={Link} to="/food" replace color="info">
           <FontAwesomeIcon icon="arrow-left" />{' '}

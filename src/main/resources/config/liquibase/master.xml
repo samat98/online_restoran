@@ -19,11 +19,15 @@
     <include file="config/liquibase/changelog/20210304075842_added_entity_Food.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210304075942_added_entity_Category.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210304080042_added_entity_Delivery.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210324105850_added_entity_Restoran.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210324105950_added_entity_Menu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210324110050_added_entity_Manager.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20210304075642_added_entity_constraints_Order.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210304075742_added_entity_constraints_OrderDetails.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20210304075842_added_entity_constraints_Food.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210324105950_added_entity_constraints_Menu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20210324110050_added_entity_constraints_Manager.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
-
 </databaseChangeLog>

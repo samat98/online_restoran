@@ -32,6 +32,13 @@
       "otherEntityRelationshipName": "food",
       "relationshipName": "category",
       "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "menu",
+      "otherEntityRelationshipName": "food",
+      "relationshipName": "menu",
+      "otherEntityField": "id"
     }
   ],
   "changelogDate": "20210304075842",

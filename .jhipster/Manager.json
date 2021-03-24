@@ -1,0 +1,40 @@
+{
+  "name": "Manager",
+  "fields": [
+    {
+      "fieldName": "numberTel",
+      "fieldType": "String",
+      "javadoc": "number_tel",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "manager",
+      "relationshipName": "user",
+      "otherEntityField": "login",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "restoran",
+      "otherEntityRelationshipName": "manager",
+      "relationshipName": "restoran",
+      "otherEntityField": "name"
+    }
+  ],
+  "changelogDate": "20210324110050",
+  "javadoc": "The Manager entity.\\n@author A true hipster",
+  "entityTableName": "manager",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["online_restoran"]
+}

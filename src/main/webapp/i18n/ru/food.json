@@ -21,6 +21,7 @@
       "img": "Img",
       "description": "Description",
       "category": "Category",
+      "menu": "Menu",
       "help": {
         "name": "name",
         "img": "image of Food"

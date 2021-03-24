@@ -1,8 +1,6 @@
 package kg.restoran.web.rest;
 
 import kg.restoran.domain.Order;
-import kg.restoran.security.AuthoritiesConstants;
-import kg.restoran.security.SecurityUtils;
 import kg.restoran.service.OrderService;
 import kg.restoran.web.rest.errors.BadRequestAlertException;
 
@@ -12,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -89,13 +86,7 @@ public class OrderResource {
     @GetMapping("/orders")
     public List<Order> getAllOrders() {
         log.debug("REST request to get all Orders");
-        List<Order> orders;
-        if (SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.ADMIN) || SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.MANAGER)) {
-            orders = orderService.findAll();
-        } else {
-            orders = orderService.findByUserIsCurrentUser();
-        }
-        return orders;
+        return orderService.findAll();
     }
 
     /**
@@ -107,12 +98,7 @@ public class OrderResource {
     @GetMapping("/orders/{id}")
     public ResponseEntity<Order> getOrder(@PathVariable Long id) {
         log.debug("REST request to get Order : {}", id);
-        Optional<Order> order;
-        if (SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.ADMIN) || SecurityUtils.isCurrentUserInRole(AuthoritiesConstants.MANAGER)) {
-            order = orderService.findOne(id);
-        } else {
-            order = orderService.findOneByUserIsCurrentUser(id);
-        }
+        Optional<Order> order = orderService.findOne(id);
         return ResponseUtil.wrapOrNotFound(order);
     }
 

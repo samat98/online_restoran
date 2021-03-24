@@ -53,6 +53,10 @@ public class CacheConfiguration {
             createCache(cm, kg.restoran.domain.Food.class.getName());
             createCache(cm, kg.restoran.domain.Category.class.getName());
             createCache(cm, kg.restoran.domain.Delivery.class.getName());
+            createCache(cm, kg.restoran.domain.Restoran.class.getName());
+            createCache(cm, kg.restoran.domain.Menu.class.getName());
+            createCache(cm, kg.restoran.domain.Menu.class.getName() + ".foods");
+            createCache(cm, kg.restoran.domain.Manager.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,27 @@
+{
+  "onlineRestoranApp": {
+    "manager": {
+      "home": {
+        "title": "Managers",
+        "createLabel": "Создать новый Manager",
+        "createOrEditLabel": "Создать или отредактировать Manager",
+        "notFound": "No Managers found"
+      },
+      "created": "Новый Manager создан с идентификатором {{ param }}",
+      "updated": "Manager обновлен с идентификатором {{ param }}",
+      "deleted": "Manager удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Manager {{ id }}?"
+      },
+      "detail": {
+        "title": "Manager"
+      },
+      "numberTel": "Number Tel",
+      "user": "User",
+      "restoran": "Restoran",
+      "help": {
+        "numberTel": "number_tel"
+      }
+    }
+  }
+}

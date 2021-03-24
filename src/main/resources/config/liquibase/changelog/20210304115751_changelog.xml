@@ -1,0 +1,43 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <changeSet author="samat (generated)" id="1614859085809-11">
+        <addColumn tableName="food">
+            <column name="img" type="longblob"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-12">
+        <addColumn tableName="food">
+            <column name="img_content_type" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-1">
+        <setTableRemarks tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-2">
+        <setTableRemarks tableName="food"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-3">
+        <setTableRemarks tableName="order_details"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-4">
+        <setColumnRemarks columnName="arrivaltime" tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-5">
+        <setColumnRemarks columnName="departurtime" tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-6">
+        <addNotNullConstraint columnDataType="varchar(255)" columnName="name" tableName="category" validate="true"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-7">
+        <addNotNullConstraint columnDataType="varchar(255)" columnName="name" tableName="food" validate="true"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-8">
+        <setColumnRemarks columnName="name" tableName="food"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-9">
+        <addNotNullConstraint columnDataType="double precision" columnName="price" tableName="food" validate="true"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1614859085809-10">
+        <setColumnRemarks columnName="quantity" tableName="order_details"/>
+    </changeSet>
+</databaseChangeLog>

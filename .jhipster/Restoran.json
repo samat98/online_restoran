@@ -1,0 +1,28 @@
+{
+  "name": "Restoran",
+  "fields": [
+    {
+      "fieldName": "address",
+      "fieldType": "String",
+      "javadoc": "address"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "javadoc": "name"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210324105850",
+  "javadoc": "The Restoran entity.\\n@author A true hipster",
+  "entityTableName": "restoran",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["online_restoran"]
+}
