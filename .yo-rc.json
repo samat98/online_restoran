@@ -37,7 +37,10 @@
     "entitySuffix": "",
     "dtoSuffix": "DTO",
     "otherModules": [],
-    "blueprints": []
+    "blueprints": [],
+    "herokuAppName": "online-restoran",
+    "herokuDeployType": "git",
+    "herokuJavaVersion": "11"
   },
   "entities": ["Order", "OrderDetails", "Food", "Restoran", "Menu", "Manager", "Category", "Delivery"]
 }
