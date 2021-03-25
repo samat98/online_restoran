@@ -6,11 +6,11 @@ services:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,swagger
       - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
-      - SPRING_DATASOURCE_URL=jdbc:mysql://online_restoran-mysql:3306/online_restoran?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://online_restoran-postgresql:5432/online_restoran
       - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
     ports:
       - 8080:8080
-  online_restoran-mysql:
+  online_restoran-postgresql:
     extends:
-      file: mysql.yml
-      service: online_restoran-mysql
+      file: postgresql.yml
+      service: online_restoran-postgresql
