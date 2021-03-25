@@ -23,8 +23,8 @@
         <!-- Build properties -->
         <maven.version>3.3.9</maven.version>
         <java.version>1.8</java.version>
-        <node.version>v12.16.1</node.version>
-        <npm.version>6.14.5</npm.version>
+        <node.version>v12.16.0</node.version>
+        <npm.version>6.14.11</npm.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>
@@ -1127,7 +1127,7 @@
                             <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                             <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                             <driver>org.postgresql.Driver</driver>
-                            <url>jdbc:postgres://ctwzlhuenefoyv:b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca@ec2-34-252-251-16.eu-west-1.compute.amazonaws.com:5432/d5utf5nn8jqim5</url>
+                            <url>jdbc:postgres://ec2-34-252-251-16.eu-west-1.compute.amazonaws.com:5432/d5utf5nn8jqim5</url>
                             <defaultSchemaName></defaultSchemaName>
                             <username>ctwzlhuenefoyv</username>
                             <password>b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca</password>
