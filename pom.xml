@@ -1126,8 +1126,8 @@
                         <configuration combine.self="override">
                             <changeLogFile>src/main/resources/config/liquibase/master.xml</changeLogFile>
                             <diffChangeLogFile>src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
-                            <driver></driver>
-                            <url>postgres://ctwzlhuenefoyv:b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca@ec2-34-252-251-16.eu-west-1.compute.amazonaws.com:5432/d5utf5nn8jqim5</url>
+                            <driver>org.postgresql.Driver</driver>
+                            <url>jdbc:postgres://ctwzlhuenefoyv:b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca@ec2-34-252-251-16.eu-west-1.compute.amazonaws.com:5432/d5utf5nn8jqim5</url>
                             <defaultSchemaName></defaultSchemaName>
                             <username>ctwzlhuenefoyv</username>
                             <password>b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca</password>
