@@ -1,0 +1,42 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <changeSet author="samat (generated)" id="1616675270864-1">
+        <setTableRemarks tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-2">
+        <setTableRemarks tableName="food"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-3">
+        <setTableRemarks tableName="manager"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-4">
+        <setTableRemarks tableName="order_details"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-5">
+        <setTableRemarks tableName="restoran"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-6">
+        <setColumnRemarks columnName="address" tableName="restoran"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-7">
+        <setColumnRemarks columnName="arrivaltime" tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-8">
+        <setColumnRemarks columnName="departurtime" tableName="delivery"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-9">
+        <setColumnRemarks columnName="img" tableName="food"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-10">
+        <setColumnRemarks columnName="name" tableName="food"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-11">
+        <setColumnRemarks columnName="name" tableName="restoran"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-12">
+        <setColumnRemarks columnName="number_tel" tableName="manager"/>
+    </changeSet>
+    <changeSet author="samat (generated)" id="1616675270864-13">
+        <setColumnRemarks columnName="quantity" tableName="order_details"/>
+    </changeSet>
+</databaseChangeLog>
