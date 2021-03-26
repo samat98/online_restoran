@@ -24,3 +24,8 @@ spring:
     password: b63cc1d80d08ccb70c9ad3e97cd59d531e30a0dd265b76c068c70ebb4a59e2ca
     hikari:
       maximumPoolSize: 8
+
+  profiles:
+    active: heroku
+    include:
+      - swagger
