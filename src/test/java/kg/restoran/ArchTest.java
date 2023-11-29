@@ -10,6 +10,7 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.noClasses;
 class ArchTest {
 
     @Test
+    // салам алейкум тест
     void servicesAndRepositoriesShouldNotDependOnWebLayer() {
 
         JavaClasses importedClasses = new ClassFileImporter()
